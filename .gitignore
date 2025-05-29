@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# Build output (uncomment if using a custom dist folder)
+dist/
+
+# Parcel cache
+.parcel-cache/
