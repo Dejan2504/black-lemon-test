@@ -25,22 +25,33 @@ h1{
 
 /* NAVIGATION BAR */
 .navigation_bar{
-    padding: 8px;
+    padding: 8px 16px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.navigation_bar .left,
+.navigation_bar .left .mobile,
 .navigation_bar .right{
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
+.navigation_bar .left .desktop{
+    display: none;
+}
 
-.navigation_bar .search{
+.navigation_bar .right .search{
+    display: none;
+}
+
+.navigation_bar .search,
+.navigation_bar .profile,
+.navigation_bar .bag{
     cursor: pointer;
 }
+
 
 /* MENU */
 .desktop-menu{
@@ -74,8 +85,8 @@ h1{
 .close_button{
     cursor: pointer;
     position: absolute;
-    top: 8px;
-    left: 20px;
+    top: 12px;
+    left: 12px;
     display: flex;
 }
 
@@ -110,10 +121,24 @@ a:hover{
 
 @media only screen and (min-width: 768px) {
    .desktop-menu{
+    display: flex;
+    gap: 30px;
+   }
+   
+   .navigation_bar .left .desktop, .navigation_bar .right .search{
     display: block;
-} 
+    } 
 
-.mobile-menu{
+.mobile-menu, .navigation_bar .left .mobile, .navigation_bar .center .logo{
     display: none;
+}
+
+.navigation_bar{
+    height: fit-content;
+    padding: 8px 81px 0 42px;
+}
+
+.navigation_bar .left .desktop .logo{
+    display: flex;
 }
 }
