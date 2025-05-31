@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./styles/style.css" rel="stylesheet" />
+    <link href="./styles/product.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +14,7 @@
     />
   </head>
   <body>
+    <!-- NAVIGATION BAR -->
     <div class="navigation_bar">
       <!-- LEFT -->
       <div class="left">
@@ -75,7 +77,106 @@
         </nav>
       </div>
     </div>
-    <h1>Welcome to the Product page</h1>
+    <!-- NAVIGATION BAR END -->
+
+    <!-- PRODUCT INFO -->
+    <div class="product_info">
+
+      <div class="left">
+        <div class="trail_mobile">
+          <div class="back_arrow">
+            <img src="./assets/svg/back-arrow.svg" alt="back-arrow" />
+          </div>
+
+            <div class="trails">
+                ALL PRODUCTS / HAIRCARE / <span class="active">RESTORATIVE HAIR MASK<span>
+            </div>
+        </div>
+        <img src="./assets/img/main-product.png" alt="product-image" />
+      </div>
+
+
+      <div class="right">
+        <div class="product">
+
+            <div class="trail_desktop">
+          <div class="back_arrow">
+            <img src="./assets/svg/back-arrow.svg" alt="back-arrow" />
+          </div>
+
+            <div class="trails">
+                ALL PRODUCTS / HAIRCARE / <span class="active">RESTORATIVE HAIR MASK<span>
+            </div>
+        </div>
+            
+            <p class="product_name">RESTORATIVE HAIR MASK</p>
+            <p class="product_name_sub">nuturishment in a bottle</p>
+    
+            <div class="divider"></div>
+    
+            <div class="product_description">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus vestibulum. Luctus accumsan tortor posuere ac ut. 
+            </div>
+    
+            <div class="product_points">
+                <div class="point">
+                    <img src="./assets/svg/organic.svg" alt="organic"/>
+                    <span>100% Organic</span>
+                </div>
+    
+                <div class="point">
+                    <img src="./assets/svg/organic.svg" alt="organic"/>
+                    <span>100% Organic</span>
+                </div>
+    
+                <div class="point">
+                    <img src="./assets/svg/organic.svg" alt="organic"/>
+                    <span>100% Organic</span>
+                </div>
+    
+                <div class="point">
+                    <img src="./assets/svg/organic.svg" alt="organic"/>
+                    <span>100% Organic</span>
+                </div>
+            </div>
+    
+            <div class="divider"></div>
+    
+            <div class="add_to_cart">
+                <form>
+                    <div class="radio_buttons">
+                        <div class="button">
+                            <input type="radio" name="order_type" id="buy_once" value="38" checked>
+                            <label for="buy_once">Buy Once | $38</label>
+                            <div class="checked"></div>
+                            <br />
+                        </div>
+                        <div class="button">
+                            <input type="radio" name="order_type" id="subscribe" value="30">
+                            <label for="subscribe">Subscribe (SAVE 20%) | <span class="red">$30</span></label>
+                            <div class="checked"></div>
+                            <br />
+                        </div>
+                    </div>
+    
+                    <div class="product_amount">
+                        <div class="amount">
+                            <div class="sub" onclick={subOne()}>-</div>
+                            <input id="amount_input" inputmode="numeric" type="number" defaultValue="1" value="1" placeholder="amount" onkeydown={checkNumber(event)}>
+                        </input>
+                            <div class="add" onclick={addOne()}>+</div>
+                        </div>
+    
+                        <div class="submit">
+                            <button type="submit">ADD TO CART</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT INFO END -->
+
   </body>
   <script src="./scripts/script.js"></script>
 </html>
