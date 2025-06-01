@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Product Page</title>
     <link href="./styles/style.css" rel="stylesheet" />
     <link href="./styles/product.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -143,7 +143,7 @@
             <div class="divider"></div>
     
             <div class="add_to_cart">
-                <form>
+                <form onsubmit=addToCart(event,this)>
                     <div class="radio_buttons">
                         <div class="button">
                             <input type="radio" name="order_type" id="buy_once" value="38" checked>
@@ -212,6 +212,60 @@
      </div>
 
     <!-- DETAILS END -->
+
+    <!-- YOU MAY ALSO LIKE -->
+     <div class="you_may_like">
+         <div class="left_arrow" onclick=moveLeft() ><img src="./assets/svg/left_arrow.svg" alt="left-arrow"/></div>
+         <div class="right_arrow" onclick=moveRight()><img src="./assets/svg/right_arrow.svg" alt="right-arrow"/></div>
+        <div class="heading">YOU MAY ALSO LIKE</div>
+        <div class="slider">
+            <div class="slider_item">
+                <img src="./assets/img/tube-product.png" alt="slider-image"/>
+
+                <div class="main_heading">HAND POMADE / POMMADE MAINS</div>
+                <div class="sub_heading">NOURISHMENT FOR YOUR HANDS</div>
+
+                <div class="price">159,00 KR</div>
+            </div>
+
+            <div class="slider_item">
+                <img src="./assets/img/tube-product.png" alt="slider-image"/>
+
+                <div class="main_heading">HAND POMADE / POMMADE MAINS</div>
+                <div class="sub_heading">NOURISHMENT FOR YOUR HANDS</div>
+
+                <div class="price">159,00 KR</div>
+            </div>
+
+            <div class="slider_item">
+                <img src="./assets/img/tube-product.png" alt="slider-image"/>
+
+                <div class="main_heading">HAND POMADE / POMMADE MAINS</div>
+                <div class="sub_heading">NOURISHMENT FOR YOUR HANDS</div>
+
+                <div class="price">159,00 KR</div>
+            </div>
+
+            <div class="slider_item">
+                <img src="./assets/img/tube-product.png" alt="slider-image"/>
+
+                <div class="main_heading">HAND POMADE / POMMADE MAINS</div>
+                <div class="sub_heading">NOURISHMENT FOR YOUR HANDS</div>
+
+                <div class="price">159,00 KR</div>
+            </div>
+
+            <div class="slider_item">
+                <img src="./assets/img/tube-product.png" alt="slider-image"/>
+
+                <div class="main_heading">HAND POMADE / POMMADE MAINS</div>
+                <div class="sub_heading">NOURISHMENT FOR YOUR HANDS</div>
+
+                <div class="price">159,00 KR</div>
+            </div>
+        </div>
+     </div>
+    <!-- YOU MAY ALSO LIKE END -->
 
   </body>
   <script src="./scripts/script.js"></script>
